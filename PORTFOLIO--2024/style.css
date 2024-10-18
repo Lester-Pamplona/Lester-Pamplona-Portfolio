@@ -1,0 +1,359 @@
+/* START--body */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12.5rem;
+  padding: 30px 110px;
+  background-color: #171717;
+}
+
+a { 
+  text-decoration: none;
+}
+/* END--body */
+
+/* START--nav */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  transition: transform 0.3s ease;
+}
+
+.nav--btn {
+  display: flex;
+  color: var(--Gray-1, #f8f9fa);
+  font-family: Montreal;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 5px;
+}
+
+.icon {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  transition: transform 0.3s ease;
+}
+
+a:hover .icon {
+  transform: rotate(20deg);
+}
+/* END--nav */
+
+/* START--Title--header */
+.hero--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.hero--title {
+  color: var(--Gray-1, #f8f9fa);
+  font-family: "Liberation Serif";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.subtext {
+  color: var(--Gray-7, #838383);
+  text-align: center;
+  font-family: Montreal;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+/* END--Title--header */
+
+/* START--Project--section */
+.project--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1.875rem;
+}
+
+.main--container {
+  width: 500px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 500px;
+}
+
+.title h3 {
+  font-family: Montreal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  color: var(--Gray-1, #f8f9fa);
+}
+
+.project--1 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  gap: 10px;
+}
+
+.project--title {
+  color: var(--Gray-1, #f8f9fa);
+  font-family: Montreal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  width: fit-content;
+}
+
+.description {
+  color: var(--Gray-7, #838383);
+  font-family: Montreal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: lowercase;
+  width: auto;
+  line-height: 1.25rem;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  width: fit-content;
+  max-width: 500px;
+  align-self: stretch;
+  border-radius: 0.625rem;
+  height: fit-content;
+  box-shadow: 0px 42px 12px 0px rgba(89, 89, 89, 0);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.container:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  border-radius: 0.625rem;
+  background: var(--Gray-9, #212529);
+  box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #333;
+  font-family: Montreal;
+  font-size: 12px;
+  color: var(--Gray-1, #f8f9fa);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 100%; /* Position it to the right of the container */
+  transform: translateY(-50%);
+  white-space: nowrap; /* Ensure the tooltip stays on one line */
+  z-index: 1;
+  margin-left: 10px;
+  box-shadow: 0px 42px 12px 0px rgba(89, 89, 89, 0);
+}
+
+.container:hover .tooltip {
+  visibility: visible;
+}
+
+/* End--Project--section */
+/***** CTA *****/
+.cta {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
+}
+
+.frame--8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+
+.frame--8,
+p.subtext {
+  color: var(--Gray-7, #838383);
+  text-align: center;
+  font-family: Montreal;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem; /* 156.25% */
+  text-transform: capitalize;
+}
+
+h4 {
+  color: var(--Gray-1, #f8f9fa);
+  font-family: "Liberation Serif";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+a.button {
+  color: var(--Gray, #f8f9fa);
+  font-family: Montreal;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: lowercase;
+  display: flex;
+  padding: 0.625rem 0.9375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--Gray-8, #343a40);
+  background: var(--Gray-9, #212529);
+  box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.tertiary--text {
+  color: var(--Gray-7, #838383);
+  font-family: Montreal;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+/***** CTA *****/
+
+/***** Mobile *****/
+@media only screen and (max-width: 480px) {
+  body {
+    gap: 3.75rem;
+    padding: 1.875rem 1rem;
+  }
+
+  .tooltip {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .hero--title {
+    font-size: 30px;
+  }
+
+  .subtext {
+    font-size: 10px;
+  }
+
+  /* START--Project--section */
+
+  .main--container {
+    width: auto;
+  }
+
+  .title{
+    width: 100%;
+  }
+
+  .title h3 {
+    font-size: 18px;
+  }
+
+  .project--1 {
+    width: auto;
+    height: auto;
+  }
+
+  .project--title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .container {
+
+    margin-bottom: 3px;
+  }
+
+  .container:hover .tooltip {
+    visibility: hidden;
+  }
+
+  /* End--Project--section */
+
+  /***** CTA *****/
+.cta {
+  gap: 1.5625rem;
+}
+
+.frame--8,
+p.subtext {
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+a.button {
+  font-size: 12px;
+  padding: 10px 8px;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.tertiary--text {
+  font-size: 10px;
+}
+/***** CTA *****/
+}
